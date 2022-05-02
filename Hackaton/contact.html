@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+        <link rel="icon" type="image/x-icon" href="/afbeeldingen/chicken_icon_125620.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Kippen in de tuin
+        </title>
+    </head>
+    <body>
+
+        <header>
+            <h1 id="titel">Kippen in de stadstuin</h1>
+            <nav>
+                <ul id="menucontainer">
+                    <li class="home"><a href="/index.html">Home</a></li>
+                    <li class="huisvesting"><a href="/huisvesting.html">Huisvesting</a></li>
+                    <li class="voeding"><a href="/voeding.html">Voeding</a></li>
+                    <li class="contact"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Neem contact op</h2>
+            <iframe id="kippenfilm" width="560" height="315" src="https://www.youtube.com/embed/12T3exSPKSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label for="aanspreekvorm">Hoe wilt u aangesproken worden?</label><br>
+                    <input type="radio" id="Dhr" name="aanspreekvorm1">
+                    <label for="aanspreekvorm1">Dhr</label><br>
+    
+                    <input type="radio" id="Mvr" name="aanspreekvorm2">
+                    <label for="aanspreekvorm2">Mvr</label><br>
+
+                    <input type="radio" id="Fam" name="aanspreekvorm3">
+                    <label for="aanspreekvorm3">Familie</label><br>
+    
+                    <input type="radio" id="Anders" name="aanspreekvorm4">
+                    <label for="cheetah">Anders namelijk:<br>
+                        <input type="text" id="namelijk" name="aanspreekvorm4">
+                    </label><br>
+    
+                </p>
+    
+                <p>
+                    <label for="naam">Naam:</label><br>
+                    <input type="text" id="naam" name="naam" value="Voor en Achternaam" required>
+                </p>
+    
+                <p>
+                    <label for="leeftijd">Uw leeftijd:</label><br>
+                    <input type="number" id="leeftijd" name="leeftijd" max="80" min="6">
+                </p>
+    
+                <p>
+                    <label for="mail">Mailadres:</label><br>
+                    <input type="email" id="mail" name="email" required>
+                </p>
+    
+                <p>
+                    <label for="tel">Telefoonnummer:</label><br>
+                    <input type="tel" id="tel" name="tel">
+                </p>
+    
+                <p>
+                    <label for="diersoort">Heeft u kippen?</label><br>
+                    <input type="checkbox" id="nijlpaard" name="diersoort">
+                    <label for="nijlpaard">Ja</label><br>
+    
+                    <input type="checkbox" id="zebra" name="diersoort">
+                    <label for="zebra">Nee</label><br>
+    
+                    <input type="checkbox" id="cheetah" name="diersoort">
+                    <label for="cheetah">Nee, maar ik wil ze wel</label><br>
+                </p>
+    
+                <p>
+                    <label for="webshop">waar wilt u uw voeding kopen?</label><br>
+                    <input type="url" id="webshop" name="webshop" value="https://">
+                </p>
+    
+                <p>
+                    <label for="vraag">Stel hier uw vraag:</label><br>
+                    <textarea rows="5" cols="30" name="vraag" id="vraag"
+                        placeholder="Een opmerking op klacht mag natuurlijk ook."></textarea>
+                </p>
+    
+                <p>
+                    <label for="afbeeldingen">Voeg hier uw eventuele foto's toe:</label><br>
+                    <input type="file" name="afbeeldingen" id="afbeeldingen" multiple>
+                </p>
+    
+                <input type="submit">
+            </form>
+
+        </main>
+        <footer>
+            © 2022 Kanta van Drongelen
+        </footer>
+    </body>
+</html>

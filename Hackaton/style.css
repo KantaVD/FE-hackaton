@@ -1,0 +1,153 @@
+body {
+    background-color: lightgrey;    
+}
+
+#titel {
+    font-size: 3rem;
+    color: rgb(43, 220, 20);
+    font-family: "bangers";
+    text-align: center;
+    margin: 0px;
+}
+
+.gridcontainer {
+    height: 100%;
+    display: grid;
+    grid-template: 50px 50px auto 20px / 1fr;
+    grid-template-areas: 
+        "h"
+        "n"
+        "m"
+        "f";
+}
+#menucontainer{
+    
+    background-color: blanchedalmond;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    grid-area: n;
+}
+
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 768px;
+    background-color: burlywood;
+    padding-bottom: 30px;
+}
+
+#tekst {
+    padding:10px;
+}
+
+#kippentuin {
+    width: 100%;
+}
+
+
+footer {
+    grid-area: f;
+    background-color: rgb(43, 220, 20);
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+.gallerij {
+    display: flex;
+    flex-flow: wrap;
+}
+
+figure img {
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scharrels {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    padding: 30px;
+}
+
+#kippenfilm {
+    width: 50%;
+    padding: 20px;
+    float: right;
+}
+
+@media (min-width: 768px) {
+   
+
+    .gridcontainer {
+        height: 100%;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 75px 30px auto 30px ;
+        grid-template-areas: 
+            "h h"
+            "n n"
+            "m m"
+            "f f";
+    }
+
+    #titel {
+        font-size: 4.5rem;
+    }
+
+    main {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+
+    #menucontainer{
+        justify-content: flex-start;
+        background-color: inherit;
+        margin: 0px;
+    }
+     
+    #menucontainer li {
+        padding: 0px 10px;
+        margin: 5px;
+        border: 2px solid rgb(43, 220, 20);
+        background-color: blanchedalmond;
+    }
+
+    .contact {
+        margin-left: auto;
+    }
+
+    #tekst {
+        grid-area: t;
+        width: 40%;
+    }
+
+    #kippentuin {
+        width: 60%;
+        float: right;
+        padding-left: 10px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    #menucontainer {
+        justify-content: center;
+    }
+}
